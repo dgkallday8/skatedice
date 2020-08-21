@@ -71,6 +71,7 @@ body {
 }
 .cube>p{
     font-size: 1em;
+    text-align: center;
 }
 .result {
     height: 20%;
@@ -78,6 +79,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 2em;
+    text-align: center;
 }
 .aside {
     flex: 1;
@@ -142,4 +144,74 @@ body {
     margin-left: 20px;
     margin-top: 7px;
     font-size: 0.8em;
+}
+
+
+@media screen and (max-width: 800px){
+    .cube {
+        height: 6em;
+        width: 6em;
+    }
+    .cube>p{
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 605px){
+    .cube {
+        height: 150px;
+        width: 150px;
+        margin: 15px;
+    }
+    .cube>p{
+        font-size: 1.3em;
+    }
+    .field {
+        flex-wrap: wrap;
+    }
+    .result {
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 460px){
+    .cube {
+        height: 100px;
+        width: 100px;
+        margin: 15px;
+    }
+    .cube>p{
+        font-size: 0.8em;
+    }
+    .modal h2,
+    .modal h4 {
+        font-size: 1em;
+    }
+    .modal p{
+        font-size: 0.8em;
+    }
+}
+@media screen and (max-width: 375px){
+    .cube {
+        height: 70px;
+        width: 70px;
+        margin: 15px;
+    }
+    .cube>p{
+        font-size: 0.6em;
+    }
+    .modal h2,
+    .modal h4 {
+        font-size: 0.7em;
+    }
+    .modal p{
+        font-size: 0.6em;
+    }
+    .footer {
+        text-align: center;
+    }
+    .logo {
+        display: none;
+    }
+    .header-title>h1 {
+        text-align: center;
+    }
 }
