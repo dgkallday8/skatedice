@@ -39,6 +39,9 @@ body {
     align-items: center;
     text-transform: uppercase;
 }
+.header-title>h1 {
+    text-align: center;
+}
 .logo img{
     width: 75%;
     height: auto;
@@ -210,8 +213,5 @@ body {
     }
     .logo {
         display: none;
-    }
-    .header-title>h1 {
-        text-align: center;
     }
 }
