@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Skate or Dice</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="wrap">
+
+    <header class="header">
+        <div class="header-title">
+            <h1>Skate or Dice</h1>
+        </div>
+        <div class="logo">
+            <img src="dice.png" alt="logo">
+        </div>
+    </header>
+
+    <div class="content">
+        <main class="main">
+            <div class="field">
+                <div id="stance" class="cube"><p>SKATE</p></div>
+                <div id="degrees" class="cube"><p>or</p></div>
+                <div id="spin" class="cube"><p>DICE</p></div>
+                <div id="flip" class="cube"><p><i class="fas fa-skull"></i></p></div>
+            </div>
+            <div id="result" class="result"></div>
+        </main>
+        <aside class="aside">
+            <div class="buttons">
+                <button title="Бросить" class="btn start"><i class="fas fa-play"></i></button>
+                <button title="Сброс" class="btn reset"><i class="fas fa-sync-alt"></i></button>
+                <button title="Правила" class="btn rules"><i class="fas fa-question"></i></button>
+            </div>
+        </aside>
+    </div>
+    <footer class="footer">
+        Михайлов Дмитрий, 2020<span>Учебное приложение</span>
+    </footer>
+</div>
+<div class="modal" id="modalWindow">
+    <p id="closeModal">Закрыть <i class="fas fa-window-close"></i></p>
+    <h2>Скейтборд Кости</h2>
+    <h4>Правила</h4>
+    <div class="rulesDiv">
+        <p>Есть 4 кубика, каждый из которых отвечает за определенный элемент трюка</p>
+        <p>(кубики стойки, градусов, вращения и флипов)</p>
+        <p>Бросив эти кубики, случайным образом можно получить трюк, который необходимо выполнить</p>
+        <p>название трюка будет выведено на экран</p>
+        <p>--- --- ---</p>
+        <p>Так же на кубиках могут выпасть надписи "Х" или "Skate Dice"</p>
+        <p>они на экран не будут выводиться (но на кубиках это видно)</p>
+        <p>Например:</p>
+        <p>На кубиках выпало: NOLLIE X SKATE DICE SHOVE-IT</p>
+        <p>На экране будет выведено: NOLLIE SHOVE-IT</p>
+        <p>Это значит что вы можете исполнить этот трюк</p>
+        <p>Так же вы можете на своё усмотрение выбрать 180 или 360 градусов или же добавить вращение FRONTSIDE или BACKSIDE</p>
+        <p>Это уже на твоё усмотрение</p>
+        <p>--- --- ---</p>
+        <p>Если же например выпало три "Х" или "Skate Dice" то у тебя больше возможности вариаций</p>
+        <p>При четырёх ты можешь вообще сделать что угодно</p>
+        <p>Думаю ты уже понял =)</p>
+        <p>--- --- ---</p>
+        <p>Соревнуйся с друзьями! Кто из вас сможет обыграть кубики или они обыграют вас?</p>
+        <p>Удачи!</p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

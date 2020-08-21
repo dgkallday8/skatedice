@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Russo One', sans-serif;
+}
+body {
+    background: #ded9d9;
+}
+.wrap {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    height: 100vh;
+    max-width: 960px;
+    width: 100%;
+    justify-content: space-between;
+    background: #c9c3c3;
+    border: #adaaaa solid 1px;
+}
+
+
+.header {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    flex: 1;
+    margin-right: 20px;
+}
+.header-title {
+    flex: 6;
+}
+.logo,
+.header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.logo img{
+    width: 75%;
+    height: auto;
+}
+.content {
+    flex: 9;
+    display: flex;
+    justify-content: space-between;
+}
+.main {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+}
+.field {
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cube {
+    height: 8em;
+    width: 8em;
+    background: red;
+    border: 3px solid black;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cube>p{
+    font-size: 1em;
+}
+.result {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.aside {
+    flex: 1;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+.footer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7em;
+}
+.footer>span {
+    margin-left: 15px;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.btn {
+    width: 5em;
+    height: 5em;
+    border-radius: 25%;
+}
+.btn:focus,
+.btn:active {
+    outline: none;
+}
+.btn>i{
+    font-size: 30px;
+}
+
+.modal {
+    height: 100%;
+    width: 100%;
+    background: yellow;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    opacity: 0.97;
+}
+.modal>#closeModal{
+    text-align: right;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: inline;
+    position: absolute;
+}
+.modal h2,
+.modal h4 {
+    text-align: center;
+    margin-top: 10px;
+}
+.modal p{
+    margin-left: 20px;
+    margin-top: 7px;
+    font-size: 0.8em;
+}
